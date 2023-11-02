@@ -131,7 +131,7 @@ Manual Steps:
 - **Disable password manager**
 - **Disable payment methods**
 - **Disable addresses**
-- Site settings: **Don't allow notifications and locations**
+- **Don't allow notifications and locations**
 - **Enable memory saver**
 - **Remove all search engines except Google**
 - **Extensions:**
