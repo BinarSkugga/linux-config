@@ -90,3 +90,51 @@ sudo tar -xvzf ~/Downloads/jetbrains-toolbox-{version}.tar.gz
 sudo mv ~/Downloads/jetbrains-toolbox-{version} /opt/jetbrains
 /opt/jetbrains/jetbrains-toolbox
 ```
+
+## Chrome Tweaks
+Channel: **unstable**
+
+Find `.desktop` file
+```
+sudo find / -name *chrome*.desktop
+```
+
+Override with
+```
+[Desktop Entry]
+Version=1.0
+Name=Google Chrome
+Exec=/usr/bin/google-chrome-unstable --disable-session-crashed-bubble --hide-crash-restore-bubble --disable-default-apps --disable-sync %U
+StartupNotify=true
+Terminal=false
+Icon=google-chrome-unstable
+Type=Application
+Categories=Network;WebBrowser;
+MimeType=application/pdf;application/rdf+xml;application/rss+xml;application/xhtml+xml;application/xhtml_xml;application/xml;image/gif;image/jpeg;image/png;image/webp;text/html;text/xml;x-scheme-handler/http;x-scheme-handler/https;
+Actions=new-window;new-private-window;
+
+[Desktop Action new-window]
+Name=New Window
+Exec=/usr/bin/google-chrome-unstable --disable-session-crashed-bubble --hide-crash-restore-bubble --disable-default-apps --disable-sync
+
+[Desktop Action new-private-window]
+Name=New Incognito Window
+Exec=/usr/bin/google-chrome-unstable --incognito --disable-session-crashed-bubble --hide-crash-restore-bubble --disable-default-apps --disable-sync
+```
+
+What it does:
+- **Disables sync with google account**
+- **Disables session restore**
+- **Disables default applications**
+
+Manual Steps:
+- **Disable password manager**
+- **Disable payment methods**
+- **Disable addresses**
+- Site settings: **Don't allow notifications and locations**
+- **Enable memory saver**
+- **Remove all search engines except Google**
+- **Extensions:**
+  - **[Tabby Cat](https://chromewebstore.google.com/detail/tabby-cat/mefhakmgclhhfbdadeojlkbllmecialg?hl=en)**
+  - **[LastPass](https://chromewebstore.google.com/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd?hl=en)**
+  - **[Ghostery](https://chromewebstore.google.com/detail/ghostery-%E2%80%93-privacy-ad-blo/mlomiejdfkolichcflejclcbmpeaniij?hl=en)**
