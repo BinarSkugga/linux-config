@@ -134,7 +134,12 @@ Manual Steps:
 - **Don't allow notifications and locations**
 - **Enable memory saver**
 - **Remove all search engines except Google**
+- **Always show bookmark bar**
 - **Extensions:**
   - **[Tabby Cat](https://chromewebstore.google.com/detail/tabby-cat/mefhakmgclhhfbdadeojlkbllmecialg?hl=en)**
   - **[LastPass](https://chromewebstore.google.com/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd?hl=en)**
   - **[Ghostery](https://chromewebstore.google.com/detail/ghostery-%E2%80%93-privacy-ad-blo/mlomiejdfkolichcflejclcbmpeaniij?hl=en)**
+
+Favorites:
+- **[CyberChef](https://gchq.github.io/CyberChef/)**
+- **[Gitlab](https://gitlab.com/dashboard)**
