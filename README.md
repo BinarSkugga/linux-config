@@ -143,3 +143,9 @@ Manual Steps:
 Favorites:
 - **[CyberChef](https://gchq.github.io/CyberChef/)**
 - **[Gitlab](https://gitlab.com/dashboard)**
+- **[Miro](https://miro.com/app/dashboard/)**
+
+# General Applications
+- **[Spotify](https://open.spotify.com/)**
+- **[MQTTX](https://mqttx.app/)**
+- **[Insomnia](https://insomnia.rest/)**
