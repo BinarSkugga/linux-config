@@ -149,3 +149,4 @@ Favorites:
 - **[Spotify](https://open.spotify.com/)**
 - **[MQTTX](https://mqttx.app/)**
 - **[Insomnia](https://insomnia.rest/)**
+- **[Flameshot](https://flameshot.org/)**
