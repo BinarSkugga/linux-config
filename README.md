@@ -19,7 +19,7 @@ Extensions:
 - Execute `gnome-terminal` on `CTRL+SHIFT+T`
 - Execute `flameshot gui` on `SHIFT+PRTSRC`
 
-## DNF Config
+# DNF Config
 Find the config file
 ```
 sudo find / -name dnf.conf
@@ -41,7 +41,7 @@ fastestmirror=True
 sudo dnf install neofetch
 ```
 
-## Docker
+# Docker
 Install Docker
 ```
 sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
@@ -61,7 +61,7 @@ sudo systemctl start docker
 sudo systemctl enable docker
 ```
 
-## Python
+# Python
 Install PyEnv
 ```
 sudo dnf -y install make gcc patch zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel tk-devel libffi-devel xz-devel libuuid-devel gdbm-libs libnsl2
@@ -85,7 +85,7 @@ pyenv install 3.11
 pyenv global 3.11
 ```
 
-## Node
+# Node
 Install NVM
 ```
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
@@ -107,7 +107,7 @@ nvm install --lts
 nvm use --lts
 ```
 
-## Jetbrains Toolbox
+# Jetbrains Toolbox
 Install the toolbox (swap version for the one downloaded)
 ```
 sudo tar -xvzf ~/Downloads/jetbrains-toolbox-{version}.tar.gz
@@ -115,7 +115,7 @@ sudo mv ~/Downloads/jetbrains-toolbox-{version} /opt/jetbrains
 /opt/jetbrains/jetbrains-toolbox
 ```
 
-## Chrome Tweaks
+# Chrome Tweaks
 Channel: **unstable**
 
 Find `.desktop` file
