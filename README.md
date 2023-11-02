@@ -141,6 +141,7 @@ Manual Steps:
   - **[Tabby Cat](https://chromewebstore.google.com/detail/tabby-cat/mefhakmgclhhfbdadeojlkbllmecialg?hl=en)**
   - **[LastPass](https://chromewebstore.google.com/detail/lastpass-free-password-ma/hdokiejnpimakedhajhdlcegeplioahd?hl=en)**
   - **[Ghostery](https://chromewebstore.google.com/detail/ghostery-%E2%80%93-privacy-ad-blo/mlomiejdfkolichcflejclcbmpeaniij?hl=en)**
+  - **[WebSocket King](https://chromewebstore.google.com/detail/websocket-king-client/cbcbkhdmedgianpaifchdaddpnmgnknn)**
 
 Favorites:
 - **[CyberChef](https://gchq.github.io/CyberChef/)**
