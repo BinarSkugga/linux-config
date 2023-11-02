@@ -36,6 +36,11 @@ max_parallel_downloads=10
 fastestmirror=True
 ```
 
+## Misc Packages
+```
+sudo dnf install neofetch
+```
+
 ## Docker
 Install Docker
 ```
