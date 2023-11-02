@@ -16,6 +16,8 @@ Extensions:
 - Mouse Click Emulation: **Area**
 - Titlebar Actions: **Middle-Click Minimize**
 - Titlebar Buttons: **Maximize & Minimize**
+- Execute `gnome-terminal` on `CTRL+SHIFT+T`
+- Execute `flameshot gui` on `SHIFT+PRTSRC`
 
 ## Docker
 Install Docker
