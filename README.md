@@ -19,6 +19,23 @@ Extensions:
 - Execute `gnome-terminal` on `CTRL+SHIFT+T`
 - Execute `flameshot gui` on `SHIFT+PRTSRC`
 
+## DNF Config
+Find the config file
+```
+sudo find / -name dnf.conf
+```
+
+```
+[main]
+gpgcheck=True
+installonly_limit=2
+clean_requirements_on_remove=True
+best=False
+skip_if_unavailable=True
+max_parallel_downloads=10
+fastestmirror=True
+```
+
 ## Docker
 Install Docker
 ```
