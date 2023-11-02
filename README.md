@@ -2,7 +2,11 @@
 - Distribution: **Fedora 39 Workstation**
 - Desktop: **Gnome**
 - Terminal Style: **[oh-my-bash](https://github.com/ohmybash/oh-my-bash) standard**
-  - `bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"`  
+  - `bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"`
+
+## Preview
+![image](https://github.com/BinarSkugga/linux-config/assets/7575628/cd3a64cf-8d1d-491b-aa9c-8a28e9d4158f)
+
 
 # Gnome Configurations
 Extensions: 
