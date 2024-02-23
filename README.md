@@ -127,15 +127,15 @@ Find `.desktop` file
 sudo find / -name *chrome*.desktop
 ```
 
-Override with
+Create a new one with with
 ```
 [Desktop Entry]
 Version=1.0
-Name=Google Chrome
-Exec=/usr/bin/google-chrome-unstable --disable-session-crashed-bubble --hide-crash-restore-bubble --disable-default-apps --disable-sync %U
+Name=Google Chrome (Clean)
+Exec=/usr/bin/google-chrome-stable --disable-session-crashed-bubble --hide-crash-restore-bubble --disable-default-apps --disable-sync %U
 StartupNotify=true
 Terminal=false
-Icon=google-chrome-unstable
+Icon=google-chrome-stable
 Type=Application
 Categories=Network;WebBrowser;
 MimeType=application/pdf;application/rdf+xml;application/rss+xml;application/xhtml+xml;application/xhtml_xml;application/xml;image/gif;image/jpeg;image/png;image/webp;text/html;text/xml;x-scheme-handler/http;x-scheme-handler/https;
@@ -143,11 +143,29 @@ Actions=new-window;new-private-window;
 
 [Desktop Action new-window]
 Name=New Window
-Exec=/usr/bin/google-chrome-unstable --disable-session-crashed-bubble --hide-crash-restore-bubble --disable-default-apps --disable-sync
+Exec=/usr/bin/google-chrome-stable --disable-session-crashed-bubble --hide-crash-restore-bubble --disable-default-apps --disable-sync
 
 [Desktop Action new-private-window]
 Name=New Incognito Window
-Exec=/usr/bin/google-chrome-unstable --incognito --disable-session-crashed-bubble --hide-crash-restore-bubble --disable-default-apps --disable-sync
+Exec=/usr/bin/google-chrome-stable --incognito --disable-session-crashed-bubble --hide-crash-restore-bubble --disable-default-apps --disable-sync
+```
+Add the following policies in `/etc/opt/chrome/policies/managed/00_gssapi.json`:
+```
+{
+        "DefaultNotificationsSetting": 2,
+        "DefaultGeolocationSetting": 2,
+        "HttpsOnlyMode": "force_enabled",
+        "AutoplayAllowed": false,
+        "SyncDisabled": true,
+        "ClearBrowsingDataOnExitList": [
+                "browsing_history",
+                "cookies_and_other_site_data",
+                "cached_images_and_files",
+                "autofill",
+                "site_settings",
+                "download_history"
+        ]
+}
 ```
 
 What it does:
