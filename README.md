@@ -37,7 +37,6 @@ clean_requirements_on_remove=True
 best=False
 skip_if_unavailable=True
 max_parallel_downloads=10
-fastestmirror=True
 ```
 
 ## Misc Packages
@@ -171,11 +170,19 @@ Exec=/usr/bin/google-chrome-stable --incognito --disable-session-crashed-bubble 
 Add the following policies in `/etc/opt/chrome/policies/managed/00_gssapi.json`:
 ```
 {
-        "DefaultNotificationsSetting": 2,
-        "DefaultGeolocationSetting": 2,
-        "HttpsOnlyMode": "force_enabled",
-        "AutoplayAllowed": false,
-        "SyncDisabled": true,
+  "DefaultNotificationsSetting": 2,
+	"HighEfficiencyModeEnabled": true,
+  "DefaultGeolocationSetting": 2,
+  "HttpsOnlyMode": "force_enabled",
+  "AutoplayAllowed": false,
+  "BookmarkBarEnabled": true,
+  "SyncDisabled": true,
+	"BlockThirdPartyCookies": true,
+	"PasswordManagerEnabled": false,
+	"AutofillAddressEnabled": false,
+	"AutofillCreditCardEnabled": false,
+	"ImportAutofillFormData": false,
+	"PaymentMethodQueryEnabled": false,
         "ClearBrowsingDataOnExitList": [
                 "browsing_history",
                 "cookies_and_other_site_data",
