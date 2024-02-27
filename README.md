@@ -1,7 +1,7 @@
 # General Info
 - Distribution: **Fedora 39 Workstation**
 - Desktop: **Gnome**
-- Terminal Style: **[oh-my-bash](https://github.com/ohmybash/oh-my-bash) standard**
+- Terminal Style: **[oh-my-bash](https://github.com/ohmybash/oh-my-bash) 90210**
   - `bash -c "$(wget https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh -O -)"`
 
 ## Preview
@@ -68,7 +68,7 @@ sudo systemctl enable docker
 # Python
 Install PyEnv
 ```
-sudo dnf -y install make gcc patch zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel tk-devel libffi-devel xz-devel libuuid-devel gdbm-libs libnsl2
+sudo dnf -y install make gcc patch zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel tk-devel libffi-devel xz-devel libuuid-devel gdbm-libs libnsl2 bluez-libs-devel
 curl https://pyenv.run | bash
 ```
 
@@ -109,6 +109,25 @@ Reload `.bashrc` & install LTS
 source .bashrc
 nvm install --lts
 nvm use --lts
+```
+
+# GO
+Install GO
+```
+wget "https://dl.google.com/go/$(curl https://go.dev/VERSION?m=text | grep go).linux-amd64.tar.gz"
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf $(curl https://go.dev/VERSION?m=text | grep go).linux-amd64.tar.gz
+sudo rm $(curl https://go.dev/VERSION?m=text | grep go).linux-amd64.tar.gz
+```
+
+Edit your `.bashrc`
+```
+# GO
+export PATH=$PATH:/usr/local/go/bin
+```
+
+Reload `.bashrc`
+```
+source .bashrc
 ```
 
 # Jetbrains Toolbox
