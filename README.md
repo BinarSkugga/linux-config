@@ -171,26 +171,26 @@ Add the following policies in `/etc/opt/chrome/policies/managed/00_gssapi.json`:
 ```
 {
   "DefaultNotificationsSetting": 2,
-	"HighEfficiencyModeEnabled": true,
+  "HighEfficiencyModeEnabled": true,
   "DefaultGeolocationSetting": 2,
   "HttpsOnlyMode": "force_enabled",
   "AutoplayAllowed": false,
   "BookmarkBarEnabled": true,
   "SyncDisabled": true,
-	"BlockThirdPartyCookies": true,
-	"PasswordManagerEnabled": false,
-	"AutofillAddressEnabled": false,
-	"AutofillCreditCardEnabled": false,
-	"ImportAutofillFormData": false,
-	"PaymentMethodQueryEnabled": false,
-        "ClearBrowsingDataOnExitList": [
-                "browsing_history",
-                "cookies_and_other_site_data",
-                "cached_images_and_files",
-                "autofill",
-                "site_settings",
-                "download_history"
-        ]
+  "BlockThirdPartyCookies": true,
+  "PasswordManagerEnabled": false,
+  "AutofillAddressEnabled": false,
+  "AutofillCreditCardEnabled": false,
+  "ImportAutofillFormData": false,
+  "PaymentMethodQueryEnabled": false,
+  "ClearBrowsingDataOnExitList": [
+        "browsing_history",
+        "cookies_and_other_site_data",
+        "cached_images_and_files",
+        "autofill",
+        "site_settings",
+        "download_history"
+  ]
 }
 ```
 
