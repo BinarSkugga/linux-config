@@ -132,9 +132,11 @@ source .bashrc
 # Jetbrains Toolbox
 Install the toolbox (swap version for the one downloaded)
 ```
-sudo tar -xvzf ~/Downloads/jetbrains-toolbox-{version}.tar.gz
-sudo mv ~/Downloads/jetbrains-toolbox-{version} /opt/jetbrains
+sudo wget $(curl 'https://data.services.jetbrains.com/products/releases?code=TBA&latest=true' | jq -r '.TBA[0].downloads.linux.link')
+sudo tar -xvzf ~/jetbrains-toolbox-$(curl 'https://data.services.jetbrains.com/products/releases?code=TBA&latest=true' | jq -r '.TBA[0].build').tar.gz
+sudo mv ~/jetbrains-toolbox-$(curl 'https://data.services.jetbrains.com/products/releases?code=TBA&latest=true' | jq -r '.TBA[0].build') /opt/jetbrains
 /opt/jetbrains/jetbrains-toolbox
+sudo rm ~/jetbrains-toolbox-$(curl 'https://data.services.jetbrains.com/products/releases?code=TBA&latest=true' | jq -r '.TBA[0].build').tar.gz
 ```
 
 # Chrome Tweaks
