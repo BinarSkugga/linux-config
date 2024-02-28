@@ -179,6 +179,7 @@ Add the following policies in `/etc/opt/chrome/policies/managed/00_gssapi.json`:
   "AutoplayAllowed": false,
   "BookmarkBarEnabled": true,
   "SyncDisabled": true,
+  "BrowserSignin": 0,
   "BlockThirdPartyCookies": true,
   "PasswordManagerEnabled": false,
   "AutofillAddressEnabled": false,
