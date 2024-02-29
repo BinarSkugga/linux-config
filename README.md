@@ -41,7 +41,7 @@ max_parallel_downloads=10
 
 ## Misc Packages
 ```
-sudo dnf install neofetch
+sudo dnf install neofetch libxkbcommon-devel wayland-devel mesa-libGL-devel
 ```
 
 # Docker
