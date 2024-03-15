@@ -41,7 +41,7 @@ max_parallel_downloads=10
 
 ## Misc Packages
 ```
-sudo dnf install neofetch libxkbcommon-devel wayland-devel mesa-libGL-devel
+sudo dnf install neofetch libxkbcommon-devel wayland-devel mesa-libGL-devel budgie-backgrounds
 ```
 
 # Docker
@@ -160,6 +160,7 @@ Type=Application
 Categories=Network;WebBrowser;
 MimeType=application/pdf;application/rdf+xml;application/rss+xml;application/xhtml+xml;application/xhtml_xml;application/xml;image/gif;image/jpeg;image/png;image/webp;text/html;text/xml;x-scheme-handler/http;x-scheme-handler/https;
 Actions=new-window;new-private-window;
+StartupWMClass=google-chrome
 
 [Desktop Action new-window]
 Name=New Window
