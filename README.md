@@ -41,7 +41,7 @@ max_parallel_downloads=10
 
 ## Misc Packages
 ```
-sudo dnf install neofetch libxkbcommon-devel wayland-devel mesa-libGL-devel budgie-backgrounds
+sudo dnf install strace neofetch libxkbcommon-devel wayland-devel mesa-libGL-devel budgie-backgrounds
 ```
 
 # Docker
