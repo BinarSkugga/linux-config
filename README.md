@@ -152,7 +152,7 @@ Create a new one with with
 [Desktop Entry]
 Version=1.0
 Name=Google Chrome (Clean)
-Exec=/usr/bin/google-chrome-stable --disable-session-crashed-bubble --hide-crash-restore-bubble --disable-default-apps --disable-sync %U
+Exec=/usr/bin/google-chrome-stable --allow-insecure-localhost --disable-session-crashed-bubble --hide-crash-restore-bubble --disable-default-apps --disable-sync %U
 StartupNotify=true
 Terminal=false
 Icon=google-chrome-stable
@@ -164,7 +164,7 @@ StartupWMClass=google-chrome
 
 [Desktop Action new-window]
 Name=New Window
-Exec=/usr/bin/google-chrome-stable --disable-session-crashed-bubble --hide-crash-restore-bubble --disable-default-apps --disable-sync
+Exec=/usr/bin/google-chrome-stable --allow-insecure-localhost --disable-session-crashed-bubble --hide-crash-restore-bubble --disable-default-apps --disable-sync
 
 [Desktop Action new-private-window]
 Name=New Incognito Window
